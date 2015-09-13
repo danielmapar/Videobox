@@ -1,0 +1,120 @@
+/*  Fix dynamic height of the video container */
+
+/* Container dimension when playlist active, or not  */
+.col-height-1-with-bar {
+  width: 100%;
+  height: 79.6%;
+  padding-bottom: 0%;
+}
+
+.col-height-1-without-bar {
+  width: 100%;
+  height: 93%;
+  padding-bottom: 0%;
+}
+
+.col-height-1-fullscreen {
+  width: 100%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.col-height-2-with-bar {
+  height: 79.6%;
+  padding-bottom: 0%;
+}
+
+.col-height-2-without-bar {
+  height: 93%;
+  padding-bottom: 0%;
+}
+
+.col-height-2-fullscreen {
+  width: 100%;
+  height: 50%;
+  padding-bottom: 20px;
+}
+
+.col-height-4-with-bar {
+  height: 42.9%;
+  padding-bottom: 40px;
+}
+
+.col-height-4-without-bar {
+  height: 49.6%;
+  padding-bottom: 40px;
+}
+
+.col-height-4-fullscreen {
+  height: 50%;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-height-6-with-bar {
+  width: 33%;
+  height: 42.9%;
+  padding-bottom: 40px;
+}
+
+.col-height-6-without-bar {
+  width: 33%;
+  height: 49.6%;
+  padding-bottom: 40px;
+}
+
+.col-height-6-fullscreen {
+  width: 33%;
+  height: 50%;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+.col-height-9-with-bar {
+  width: 33%;
+  height: 28.6%;
+  padding-bottom: 40px;
+}
+
+.col-height-9-without-bar {
+  width: 33%;
+  height: 33.1%;
+  padding-bottom: 40px;
+}
+
+.col-height-9-fullscreen {
+  width: 33%;
+  height: 33.1%;
+  padding-bottom: 15px;
+  padding-left: 5px;
+  padding-right: 5px;
+}
+
+/* Show a border during drag and drop action */
+.mouse-over {
+  border: 3px dashed gray;
+}
+
+/* Align video container and give it padding from the top menu */
+.container {
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  padding-top: 70px;
+  width: 100%;
+  height: 100%;
+}
+
+/* Change "Drag" button cursor icon */
+.container .col-xs-6 .btn {
+  cursor: move;
+  display: inline-block;
+}
+
+/* Change iframe so it does not intercept drag and drop */
+.dragging-video {
+  pointer-events: none;
+}

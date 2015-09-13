@@ -1,0 +1,93 @@
+/* Fix for Bootstrap 3 with Angular UI Bootstrap */
+
+.modal { 
+	display: block;
+}
+
+/* Custom dialog/modal headers */
+
+.dialog-header-error { background-color: #d2322d; }
+.dialog-header-notify { background-color: #428bca; }
+.dialog-header-confirm { background-color: #333333; }
+	.dialog-header-error span, .dialog-header-error h4,
+	.dialog-header-wait span, .dialog-header-wait h4,
+	.dialog-header-confirm span, .dialog-header-confirm h4 { color: #ffffff; }
+
+/* Body formatting for erro message */
+.modal-content .text-danger {
+	font-size: 25px;
+	text-align: center;
+}
+
+/* Header formatting for info message */
+.modal-content .text-info {
+	color: white;
+	font-size: 25px;
+	text-align: center;
+}
+
+/* Body formatting for info message */
+.modal-body.text-info {
+	color: black;
+	font-size: 25px;
+	text-align: center;
+}
+
+.modal-content form input {
+	font-size: 20px;
+}
+
+/* Change buttons size */
+.modal-footer .btn {
+	font-size: 19px;
+}
+
+/* Custom width for the Sign up modal */
+.sign-up-modal .modal-dialog {
+	width: 478px;
+}
+
+/* Erro message color and position */
+.form-group .error {
+	color: #d9534f;
+	display: inline-block;
+}
+
+/* Change email field warning message */
+.form-group .alert {
+	margin-bottom: 5px;
+}
+.form-group.remove-bottom-gap {
+	margin-bottom: 5px;
+} 
+
+/* Tags field size */
+tags-input .host {
+	margin: 0px;
+}
+tags-input .tags .input {
+	width: 91px;
+    padding: 6px 12px;
+	color: #555;
+    background-color: #fff;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 20px;
+    font-weight: normal;
+}
+/* Remove default shadow from tags input */
+tags-input .tags {
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+}
+
+/* Loading spinner */
+.modal-footer .md-preloader {
+	float: left;
+	width: 40px;
+	height: 40px;
+}
+
+/* Ease Display */
+
+.pad { padding: 25px; }

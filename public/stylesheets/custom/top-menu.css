@@ -1,0 +1,78 @@
+html, body {
+  height: 100%;
+  margin:0;
+  padding:0;
+}
+
+/* Navbar height */
+.navbar {
+  min-height: 60px;
+}
+
+/* Logo size and position*/
+.navbar-brand {
+  font-size: 48px;
+  padding-top: 10px;
+}
+
+/* Left menu button size */
+.navbar-brand .btn {
+  font-size: 12px;
+  vertical-align: 80%;
+  height: 40px;
+}
+
+/* Remove border from top menu options and fix of search bar */
+.navbar-form {
+  border: none;
+  width: 65%;
+  padding-left: 30px;
+}
+
+/* Fix search bar size */
+.navbar-form .input-group {
+  width: 100%;
+}
+.navbar-form .input-group .input-group-btn {
+  width: 5%;
+}
+
+/* Increase searchbar font size */
+.navbar-form .input-group input[type="text"]{
+  font-size:20px;
+  height: 42px;
+}
+
+/* Increase size of lupe */
+.navbar-form .input-group .input-group-btn i{
+  font-size: 23px;
+}
+
+/* Give padding to the top menu */
+.container-fluid {
+  padding-right: 35px;
+  padding-left: 45px;
+}
+
+/* Fix "Screens" dropdown width and font size */
+.nav .dropdown-menu {
+  min-width: 116px;
+  font-size: 16px;
+}
+.nav .dropdown {
+  font-size: 16px;
+}
+
+/* Search bar width when resizing */
+@media screen and (max-width: 836px) {
+  .navbar-form {
+    width: 60%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .navbar-form {
+    width: 100%;
+    padding-left: 0px;
+  }
+}
