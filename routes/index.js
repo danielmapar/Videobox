@@ -4,11 +4,6 @@ var express = require('express'),
 	registerService = require("../services/user").register,
 	loginService = require("../services/user").login;
 
-/* GET home page. */
-router.get('/', function(req, res, next) {
-	res.render('index', { title: 'Videobox' });
-}); 
-
 /*
 	/register - Endpoint to create a User
 

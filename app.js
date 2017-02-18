@@ -49,6 +49,7 @@ app.use('/css', express.static(__dirname + '/public/stylesheets'));
 app.use('/img', express.static(__dirname + '/public/images'));
 
 app.all('/*', function(req, res, next) {
+    console.log("here!!!");
     // Just send the index.html for other files to support HTML5Mode
     res.sendFile('index.html', { root: __dirname + '/public' });
 });
