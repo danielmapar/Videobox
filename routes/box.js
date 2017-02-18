@@ -5,7 +5,7 @@ var express        			     = require('express'),
 	createUnauthenticatedService = require("../services/box").createUnauthenticated,
 
 	jwt  = require('express-jwt'),
-	auth = jwt({secret: 'ENV_VAR', userProperty: 'user'});
+	auth = jwt({secret: process.env.jwt_secret, userProperty: 'user'});
 
 /*
 	/create - Endpoint to create a Box as an authenticated User

@@ -4,7 +4,7 @@ var mongoose = require('mongoose'),
 	User = mongoose.model('User'),
 	schedule = require('node-schedule'),
 	mandrill = require('mandrill-api/mandrill'),
-	mandrill_client = new mandrill.Mandrill('eb8QmgM0NCA5PKyZD9jU2g');
+	mandrill_client = new mandrill.Mandrill(process.env.mandrill_api_key);
 
 /*
 The cron format consists of:

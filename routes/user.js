@@ -11,7 +11,7 @@ var express                           = require('express'),
 	validateAccountService            = require("../services/user").validateAccount,
 
 	jwt  = require('express-jwt'),
-	auth = jwt({secret: 'ENV_VAR', userProperty: 'user'});
+	auth = jwt({secret: process.env.jwt_secret, userProperty: 'user'});
 
 /*
 	/reactivate - Endpoint to activate a User that did not provide an email address

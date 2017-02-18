@@ -152,7 +152,7 @@ var mongoose = require('mongoose'),
 							username: this.username,
 							email: (this.email && this.email.address) ? this.email.address : null,
 							exp: parseInt(exp.getTime() / 1000),
-						}, 'ENV_VAR');
+						}, process.env.jwt_secret);
 	};
 
 mongoose.model('User', UserSchema);

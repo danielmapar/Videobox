@@ -81,12 +81,10 @@ var mongoose = require('mongoose'),
 			} 
 			VideoAPI.validateUrl(videos[i].src, function(error) {
 				if(error) {
-					console.log('opa' + i);
 					return callback(error);
 				}
 			});
 		}
-		console.log('saiu');
 		return callback(false);
 	};
 
